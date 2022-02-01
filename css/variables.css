@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500&display=swap');
+
+:root {
+
+    /* Colours */
+    --colour-1: hsl(327, 40%, 58%);
+    --colour-2: hsl(259, 26%, 36%);
+    --colour-3: hsl(237, 34%, 41%);
+    --colour-4: hsl(220, 49%, 71%);
+    --colour-5: hsl(5, 74%, 80%);
+
+    --light-text-colour: hsl(0, 0%, 15%);
+    --light-bg-colour: hsl(0, 0%, 95%);
+
+    --dark-text-colour: hsl(0, 0%, 95%);
+    --dark-bg-colour: hsl(0, 0%, 15%);
+
+    --border-colour: hsl(0, 0%, 75%);
+
+    --active-nav-colour: hsl(327, 60%, 78%);
+
+    /* Pixel Spacing */
+    --px-1: 10px;
+    --px-2: 20px;
+    --px-3: 30px;
+    --px-4: 40px;
+
+    --logo-font: Cinzel;
+    --title-font: Raleway;
+    --regular-font: Roboto;
+
+     /* Font Sizes */
+    --paragraph-font-size: 1rem;
+    --intro-title-font-size: 8rem;
+    --intro-description-font-size: 1.25rem;
+
+    --project-title-font-size: 2rem;
+
+    --logo-font-size: 1.25rem;
+    --initials-font-size: 3.5rem;
+    --header-font-size: 1rem;
+    --footer-font-size: 0.9rem;
+
+    /* Element Sizes */
+    --header-height: 75px;
+    --footer-height: 300px;
+}

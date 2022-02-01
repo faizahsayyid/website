@@ -1,0 +1,122 @@
+/* Art */
+
+.art {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.art-slide-show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: var(--px-4) 0 var(--px-2) 0;
+}
+
+.art-slide {
+  border-radius: 10px;
+}
+
+.art-animation {
+  animation: art 2s ease;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: var(--px-3) 0 100px;
+}
+
+.dots > .dot {
+  height: 15px;
+  width: 15px;
+  background-color: hsl(237, 34%, 71%);
+  margin: 0 var(--px-2);
+  border-radius: 50%;
+}
+
+.dots > .dot-active {
+  background-color: var(--colour-3);
+}
+
+@keyframes art {
+  from {
+    opacity: 80%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.art-page-main {
+  display: flex;
+  justify-content: center;
+}
+
+.art-page-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 85vw;
+  margin: 50px 0;
+}
+
+.art-page {
+  /* width: 75vw; */
+  display: grid;
+  place-items: center;
+  grid-template-columns: auto auto auto;
+  /* flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; */
+}
+
+.artwork {
+  margin: var(--px-2);
+  width: 400px;
+  /* grid-column: span 2; */
+}
+
+.shera {
+  grid-column: span 3;
+  width: 1280px;
+}
+
+.essa {
+  grid-column: span 3;
+  width: 1280px;
+}
+
+.hbd {
+  grid-column: span 3;
+  width: 1280px;
+}
+
+.girl {
+  height: 510px;
+}
+
+/* .about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px 40px;
+}
+
+.picture-me {
+  margin: 10px 0;
+}
+
+.about-info {
+  width: 500px;
+} */
