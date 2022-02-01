@@ -3,142 +3,142 @@
 /* GLOBALS */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--light-bg-colour);
-    font-family: var(--regular-font);
-    color: var(--light-text-colour);
+  background-color: var(--light-bg-colour);
+  font-family: var(--regular-font);
+  color: var(--light-text-colour);
 }
 
 /* HEADER */
 
 header {
-    padding: var(--px-2);
-    background-color: var(--dark-bg-colour);
-    width: 100%;
-    height: var(--header-height);
-    top: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
-    z-index: 50;
+  padding: var(--px-2);
+  background-color: var(--dark-bg-colour);
+  width: 100%;
+  height: var(--header-height);
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 50;
 }
 
 header > nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .dark-text {
-    color: var(--dark-text-colour);
+  color: var(--dark-text-colour);
 }
 
 header > nav > .logo {
-    padding: 0 0 0 70px;
-    justify-self: start;
-    font-size: var(--logo-font-size);
-    font-family: var(--logo-font);
-    letter-spacing: 5px;
-    font-weight: 700;
+  padding: 0 0 0 70px;
+  justify-self: start;
+  font-size: var(--logo-font-size);
+  font-family: var(--logo-font);
+  letter-spacing: 5px;
+  font-weight: 700;
 }
 
 header > nav > .nav-list {
-    justify-self: end;
+  justify-self: end;
 }
 
 header > nav > .socials {
-    padding: 0 70px 0 0;
-    justify-self: end;
+  padding: 0 70px 0 0;
+  justify-self: end;
 }
 
 header > nav > .socials > a {
-    text-decoration: none;
-    margin: 0 var(--px-1);
+  text-decoration: none;
+  margin: 0 var(--px-1);
 }
 
 header > nav > .socials > a:hover {
-    opacity: 70%;
+  opacity: 70%;
 }
 
 header > nav > .nav-list > .nav-item {
-    margin: 0 var(--px-2);
-    text-decoration: none;
-    font-size: var(--header-font-size);
-    font-family: var(--title-font);
-    font-weight: 400;
-    letter-spacing: 3px;
+  margin: 0 var(--px-2);
+  text-decoration: none;
+  font-size: var(--header-font-size);
+  font-family: var(--title-font);
+  font-weight: 400;
+  letter-spacing: 3px;
 }
 
 header > nav > .nav-list > .active {
-    color: var(--active-nav-colour);
-    font-weight: 600;
+  color: var(--active-nav-colour);
+  font-weight: 600;
 }
 
 header > nav > .nav-list > .nav-item:hover {
-    opacity: 70%;
-    font-size: calc(var(--header-font-size) + 0.1rem);
+  opacity: 70%;
+  font-size: calc(var(--header-font-size) + 0.1rem);
 }
 
 /* MAIN CONTENT */
 
 main {
-    margin-top: var(--header-height);
+  margin-top: var(--header-height);
 }
 
 .title {
-    font-family: var(--title-font);
-    font-size: 2rem;
-    letter-spacing: 10px;
-    font-weight: 700;
-    color: var(--colour-3);
-    margin-top: 30px;
+  font-family: var(--title-font);
+  font-size: 3rem;
+  letter-spacing: 10px;
+  font-weight: 700;
+  color: var(--colour-3);
+  margin: 40px 0;
 }
 
 /* FOOTER */
 
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: var(--footer-height);
-    background-color: var(--dark-bg-colour);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: var(--footer-height);
+  background-color: var(--dark-bg-colour);
 }
 
 footer > .initials {
-    font-family: var(--logo-font);
-    font-size: var(--initials-font-size);
-    margin-bottom: var(--px-3);
+  font-family: var(--logo-font);
+  font-size: var(--initials-font-size);
+  margin-bottom: var(--px-3);
 }
 
 footer > .nav-list {
-    margin-bottom: var(--px-4);
-    font-size: var(--footer-font-size);
-    font-weight: 400;
-    letter-spacing: 3px;
+  margin-bottom: var(--px-4);
+  font-size: var(--footer-font-size);
+  font-weight: 400;
+  letter-spacing: 3px;
 }
 
 footer > .nav-list > a {
-    text-decoration: none;
-    margin: 0 var(--px-2);
+  text-decoration: none;
+  margin: 0 var(--px-2);
 }
 
 footer > .socials > a {
-    text-decoration: none;
-    margin: 0 var(--px-2);
+  text-decoration: none;
+  margin: 0 var(--px-2);
 }
 
 footer > .nav-list > a:hover {
-    text-decoration: underline;
-    opacity: 70%;
+  text-decoration: underline;
+  opacity: 70%;
 }
 
 footer > .socials > a:hover {
-    opacity: 70%;
+  opacity: 70%;
 }
