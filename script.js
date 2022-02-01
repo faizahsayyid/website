@@ -1,19 +1,19 @@
 const projectShowBtns = document.querySelectorAll("button[data-project-show]");
 
 projectShowBtns.forEach((projectShowBtn) => {
-    const projectId = projectShowBtn.dataset.projectShow;
-    const description = document.querySelector(`div[data-project-description='${projectId}']`);
-    projectShowBtn.addEventListener("click", () => {
-        projectShowBtn.textContent = projectShowBtn.textContent == "Show More" ? "Show Less" : "Show More";
-        description.classList.toggle("hide");
-    })
+  const projectId = projectShowBtn.dataset.projectShow;
+  const description = document.querySelector(
+    `div[data-project-description='${projectId}']`
+  );
+  projectShowBtn.addEventListener("click", () => {
+    projectShowBtn.textContent =
+      projectShowBtn.textContent == "Show More" ? "Show More" : "Show Less";
+    description.classList.toggle("hide");
+  });
 });
-
 
 const intro = document.getElementById("intro");
 const projectHightLights = document.getElementById("project-hightLights");
-
-
 
 // import { projects } from './assets/data/projects.js'
 
@@ -81,7 +81,7 @@ const projectHightLights = document.getElementById("project-hightLights");
 //     // })
 
 //     // setInterval(() => {
-        
+
 //     //     $('.art-slide').each(function(index){
 //     //         if(index === artSlideCounter) {
 //     //             $(this).show().addClass('art-animation')
@@ -134,7 +134,6 @@ const projectHightLights = document.getElementById("project-hightLights");
 //     $(`#project-show-btn-p-${index}`).on('click', () => showProjectDescriptionForPage(index))
 // })
 
-
 // function showProjectDescription(index) {
 //     if($(`#project-description-${index}`).is(':visible')){
 //         $(`#project-show-btn-${index}`).text('Show More')
@@ -145,7 +144,7 @@ const projectHightLights = document.getElementById("project-hightLights");
 //         $(`#project-${index}`).css('height', '+=90vh')
 //         $(`#project-highlights`).css('height', '+=90vh')
 //     }
-    
+
 //     $(`#project-description-${index}`).toggle()
 // }
 
@@ -159,6 +158,6 @@ const projectHightLights = document.getElementById("project-hightLights");
 //         $(`#project-p-${index}`).css('height', '+=90vh')
 //         $(`#project-page`).css('height', '+=90vh')
 //     }
-    
+
 //     $(`#project-description-p-${index}`).toggle()
 // }
