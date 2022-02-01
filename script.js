@@ -5,9 +5,10 @@ projectShowBtns.forEach((projectShowBtn) => {
   const description = document.querySelector(
     `div[data-project-description='${projectId}']`
   );
+  projectShowBtn.textContent = "Show More";
   projectShowBtn.addEventListener("click", () => {
     projectShowBtn.textContent =
-      projectShowBtn.textContent == "Show More" ? "Show More" : "Show Less";
+      projectShowBtn.textContent === "Show More" ? "Show Less" : "Show More";
     description.classList.toggle("hide");
   });
 });
