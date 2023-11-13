@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Josefin+Sans:wght@500;700&family=Lobster&family=Philosopher:wght@700&display=swap");
+:root {
+  --nav-height: 6rem;
+  --font-size: 1rem;
+
+  --bg-color: #fff;
+  --text-primary: hsl(259, 64%, 24%);
+  --accent-red: #ff8096;
+  --accent-orange: #ff9c7e;
+  --accent-yellow: #ffba7f;
+  --accent-green: #42d5b6;
+
+  --white: #fff;
+  --black: #000;
+
+  --body-font: "Cabin", sans-serif;
+  --heading-font: "Josefin Sans", sans-serif;
+  --logo-font: Philosopher, sans-serif;
+  --font-size: 16px;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--bg-color);
+  font-size: var(--font-size);
+  color: var(--text-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+
+.nav {
+  font-family: var(--heading-font);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  height: var(--nav-height);
+  background-color: var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav__logo {
+  font-family: var(--logo-font);
+  text-shadow: 2px 2px var(--text-primary);
+  font-size: 4rem !important;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 0 0.5em;
+  margin-right: auto;
+}
+
+.nav__logo-letter {
+  --_accent: var(--accent, var(--accent-red));
+  color: var(--_accent);
+}
+
+.nav__logo-letter--r {
+  --accent: var(--accent-red);
+}
+
+.nav__logo-letter--o {
+  --accent: var(--accent-orange);
+}
+
+.nav__logo-letter--y {
+  --accent: var(--accent-yellow);
+}
+
+.nav__logo-letter--g {
+  --accent: var(--accent-green);
+}
+
+.nav__link {
+  margin: 0 2em;
+}
+
+.nav__link a {
+  color: inherit;
+  text-decoration: none;
+  font-size: var(--font-size);
+  padding-bottom: 0.5em;
+
+  &:hover {
+    border-bottom: solid 2px var(--text-primary);
+  }
+}
+
+main {
+  margin: var(--nav-height) 2em 0;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.hero__intro {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero__intro h1 {
+  font-size: 1.5rem;
+  font-family: var(--body-font);
+}
+
+.hero__intro p {
+  font-size: 3rem;
+  font-family: var(--heading-font);
+  font-weight: 700;
+}
+
+.hero__button {
+  --size-1: 25px;
+  --size-2: 62.5px;
+  --size-3: 125px;
+  --size-4: 187.5px;
+  --size-5: 250px;
+
+  display: block;
+  font-size: 1rem;
+  border: none;
+  background-color: var(--text-primary);
+  color: var(--white);
+  padding: 1em 2em;
+  border-radius: 10px;
+  text-decoration: none;
+  width: fit-content;
+
+  &:hover {
+    color: transparent;
+    animation: gradientAnimation 1.25s linear forwards,
+      fadeIn 2s linear 1.25s forwards;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: var(--white);
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-image: radial-gradient(
+      var(--size-1) circle,
+      var(--accent-red) 50%,
+      transparent 50%
+    );
+  }
+  7.5% {
+    background-image: radial-gradient(
+      var(--size-2) circle,
+      var(--accent-red) 50%,
+      transparent 50%
+    );
+  }
+  15% {
+    background-image: radial-gradient(
+      var(--size-3) circle,
+      var(--accent-red) 50%,
+      transparent 50%
+    );
+  }
+  22.5% {
+    background-image: radial-gradient(
+        var(--size-1) circle,
+        var(--accent-orange) 50%,
+        transparent 50%
+      ),
+      radial-gradient(
+        var(--size-4) circle,
+        var(--accent-red) 50%,
+        transparent 50%
+      );
+  }
+  30% {
+    background-image: radial-gradient(
+        var(--size-2) circle,
+        var(--accent-orange) 50%,
+        transparent 50%
+      ),
+      radial-gradient(
+        var(--size-5) circle,
+        var(--accent-red) 50%,
+        transparent 50%
+      );
+  }
+  37.5% {
+    background-image: radial-gradient(
+        var(--size-3) circle,
+        var(--accent-orange) 50%,
+        transparent 50%
+      ),
+      radial-gradient(
+        var(--size-5) circle,
+        var(--accent-red) 50%,
+        transparent 50%
+      );
+  }
+  45% {
+    background-image: radial-gradient(
+        var(--size-1) circle,
+        var(--accent-yellow) 50%,
+        transparent 50%
+      ),
+      radial-gradient(
+        var(--size-4) circle,
+        var(--accent-orange) 50%,
+        transparent 50%
+      ),
+      radial-gradient(
+        var(--size-5) circle,
+        var(--accent-red) 50%,
+        transparent 50%
+      );
+  }
+  52.5% {
+    background-image: radial-gradient(
+        var(--size-2) circle,
+        var(--accent-yellow) 50%,
+        transparent 50%
+      ),
+      radial-gradient(
+        var(--size-5) circle,
+        var(--accent-orange) 50%,
+        transparent 50%
+      );
+  }
+  60% {
+    background-image: radial-gradient(
+        var(--size-3) circle,
+        var(--accent-yellow) 50%,
+        transparent 50%
+      ),
+      radial-gradient(
+        var(--size-5) circle,
+        var(--accent-orange) 50%,
+        transparent 50%
+      );
+  }
+  67.5% {
+    background-image: radial-gradient(
+        var(--size-1) circle,
+        var(--accent-green) 50%,
+        transparent 50%
+      ),
+      radial-gradient(
+        var(--size-4) circle,
+        var(--accent-yellow) 50%,
+        transparent 50%
+      ),
+      radial-gradient(
+        var(--size-5) circle,
+        var(--accent-orange) 50%,
+        transparent 50%
+      );
+  }
+  75% {
+    background-image: radial-gradient(
+        var(--size-2) circle,
+        var(--accent-green) 50%,
+        transparent 50%
+      ),
+      radial-gradient(
+        var(--size-5) circle,
+        var(--accent-yellow) 50%,
+        transparent 50%
+      );
+  }
+  82.5% {
+    background-image: radial-gradient(
+        var(--size-3) circle,
+        var(--accent-green) 50%,
+        transparent 50%
+      ),
+      radial-gradient(
+        var(--size-5) circle,
+        var(--accent-yellow) 50%,
+        transparent 50%
+      );
+  }
+  90% {
+    background-image: radial-gradient(
+        var(--size-4) circle,
+        var(--accent-green) 50%,
+        transparent 50%
+      ),
+      radial-gradient(
+        var(--size-5) circle,
+        var(--accent-yellow) 50%,
+        transparent 50%
+      );
+  }
+  100% {
+    background-image: radial-gradient(
+      var(--size-5) circle,
+      var(--accent-green) 50%,
+      transparent 50%
+    );
+  }
+}
+
+.hero__image {
+  width: 30%;
+  border-radius: 20px;
+}
+
+footer {
+  background-color: var(--text-primary);
+  color: var(--white);
+  padding: 2em 0;
+  letter-spacing: 0.5cap;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+
+.footer__logo {
+  font-size: 1.5rem;
+}
