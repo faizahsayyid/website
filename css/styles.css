@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin&family=Josefin+Sans:wght@500;700&family=Lobster&family=Philosopher:wght@700&display=swap");
 :root {
-  --nav-height: 6rem;
+  --nav-height: 5rem;
   --font-size: 1rem;
 
   --bg-color: #fff;
@@ -41,11 +41,17 @@ h6 {
   display: flex;
   align-items: center;
   height: var(--nav-height);
-  background-color: var(--primary);
+  background-color: var(--bg-color);
+  padding: 0 1em;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+
+  @media screen and (max-width: 850px) {
+    flex-direction: column;
+    height: fit-content;
+  }
 }
 
 .nav__logo {
@@ -54,8 +60,18 @@ h6 {
   font-size: 4rem !important;
   text-decoration: none;
   font-size: 1.5rem;
-  margin: 0 0.5em;
+}
+
+.nav__head {
+  padding: 1em 0;
   margin-right: auto;
+  @media screen and (max-width: 850px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .nav__logo-letter {
@@ -79,31 +95,77 @@ h6 {
   --accent: var(--accent-green);
 }
 
+.nav__toggle {
+  @media screen and (min-width: 850px) {
+    display: none;
+  }
+}
+
 .nav__link {
   margin: 0 2em;
+  @media screen and (max-width: 850px) {
+    display: none;
+    background-color: var(--bg-color);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+  }
+
+  &:hover {
+    @media screen and (max-width: 850px) {
+      background-color: var(--text-primary);
+      color: var(--bg-color);
+    }
+  }
 }
 
 .nav__link a {
   color: inherit;
   text-decoration: none;
   font-size: var(--font-size);
-  padding-bottom: 0.5em;
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  @media screen and (min-width: 850px) {
+    padding-bottom: 0.5em;
+  }
 
   &:hover {
-    border-bottom: solid 2px var(--text-primary);
+    @media screen and (min-width: 850px) {
+      border-bottom: solid 2px var(--text-primary);
+    }
   }
 }
 
+.nav__toggle {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+}
+
 main {
-  margin: var(--nav-height) 2em 0;
+  --main-y-spacing: 5em;
+  --main-x-spacing: 2em;
+  margin: calc(var(--nav-height) + var(--main-y-spacing)) 2em
+    var(--main-y-spacing);
+  min-height: calc(100vh - var(--main-y-spacing) * 2 - var(--nav-height));
 }
 
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 5em;
-  margin-right: 5em;
+  margin: 0 8em;
+  @media screen and (max-width: 850px) {
+    flex-direction: column-reverse;
+    gap: 30px;
+    margin: 0;
+  }
 }
 
 .hero__intro {
@@ -111,6 +173,9 @@ main {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  @media screen and (max-width: 850px) {
+    width: 90%;
+  }
 }
 
 .hero__intro h1 {
@@ -321,6 +386,14 @@ main {
 .hero__image {
   width: 30%;
   border-radius: 20px;
+  @media screen and (max-width: 850px) {
+    width: 90%;
+  }
+}
+
+.card {
+  border: black solid 1px;
+  padding: 2em;
 }
 
 footer {

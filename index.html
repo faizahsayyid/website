@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/b27b093d36.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -14,8 +19,8 @@
   <body>
     <header>
       <ul class="nav">
-        <li class="nav__logo">
-          <div>
+        <li class="nav__head">
+          <div class="nav__logo">
             <span class="nav__logo-letter nav__logo-letter--r">F</span>
             <span class="nav__logo-letter nav__logo-letter--o">a</span>
             <span class="nav__logo-letter nav__logo-letter--y">i</span>
@@ -23,6 +28,7 @@
             <span class="nav__logo-letter nav__logo-letter--o">a</span>
             <span class="nav__logo-letter nav__logo-letter--r">h</span>
           </div>
+          <i id="mobileNavToggle" class="nav__toggle fa-solid fa-bars"></i>
         </li>
         <li class="nav__link"><a href="#">Home</a></li>
         <li class="nav__link"><a href="#">Projects</a></li>
@@ -43,10 +49,12 @@
           alt="It's a me, Faizah!"
         />
       </section>
+      <section class="content-container">
+        <article class="card"><h1>Hello</h1></article>
+      </section>
     </main>
     <footer>
       <p class="footer__logo">faizah sayyid</p>
-      <p>2023</p>
     </footer>
   </body>
 </html>
