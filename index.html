@@ -29,10 +29,12 @@
         </div>
         <div class="nav-list" id="nav-list">
           <a href="/website/" class="nav-item dark-text active">Home</a>
-          <a href="/website/projects" class="nav-item dark-text">Projects</a>
-          <a href="/website/art" class="nav-item dark-text">Art</a>
+          <a href="/website#project-highlights" class="nav-item dark-text"
+            >Projects</a
+          >
+          <!-- <a href="/website/art" class="nav-item dark-text">Art</a> -->
           <!-- <a href="/about" class="nav-item dark-text">About</a> -->
-          <a href="Resume_Faizah_Sayyid__Jan_31_.pdf" class="nav-item dark-text"
+          <a href="Resume_Faizah_Sayyid_012225.pdf" class="nav-item dark-text"
             >Resume</a
           >
         </div>
@@ -45,10 +47,20 @@
             href="https://github.com/faizahsayyid"
             class="fa fa-github dark-text fa-2x"
           ></a>
-          <a
-            href="https://www.instagram.com/fy_fy_comics/"
-            class="fa fa-instagram dark-text fa-2x"
-          ></a>
+          <a href="https://devpost.com/faizahsayyid" class="dark-text"
+            ><svg
+              fill="#fff"
+              width="32px"
+              height="32px"
+              viewBox="0 0 24 24"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.002 1.61 0 12.004 6.002 22.39h11.996L24 12.004 17.998 1.61zm1.593 4.084h3.947c3.605 0 6.276 1.695 6.276 6.31 0 4.436-3.21 6.302-6.456 6.302H7.595zm2.517 2.449v7.714h1.241c2.646 0 3.862-1.55 3.862-3.861.009-2.569-1.096-3.853-3.767-3.853z"
+              />
+            </svg>
+          </a>
         </div>
       </nav>
     </header>
@@ -58,11 +70,7 @@
       <div class="intro" id="intro">
         <h1 class="intro-title">Faizah Sayyid</h1>
         <div class="intro-description">
-          <span class="intro-tag">software developer</span>
-          <div class="intro-dot"></div>
-          <span class="intro-tag">artist</span>
-          <!-- <div class="intro-dot"></div>
-                <span class="intro-tag">computer science student</span> -->
+          <span class="intro-tag">software engineer</span>
         </div>
       </div>
 
@@ -70,21 +78,9 @@
       <div class="project-list" id="project-highlights">
         <h1 class="title">Projects</h1>
         <!-- Interviewy -->
-        <div class="project" data-project>
-          <h2 class="project-title">Interviewy</h2>
-          <h3 class="project-summary">
-            Interviewy provides jobseekers an accessible environment where they
-            can practice their interview skills at any time.
-          </h3>
-          <div class="project-content">
-            <div class="project-tool-list">
-              <h4 class="project-subtitle">Tools:</h4>
-              <div>
-                <span class="project-tool-item">React</span>
-                <span class="project-tool-item">Express</span>
-                <span class="project-tool-item">MongoDB</span>
-              </div>
-            </div>
+        <article class="project" data-project>
+          <div class="project-header">
+            <h2 class="project-title"><i class="fa fa-trophy"></i>Interviewy</h2>
             <div class="project-link-list">
               <a
                 href="https://github.com/faizahsayyid/deltahacks2022"
@@ -98,64 +94,55 @@
                 >Devpost</a
               >
             </div>
-            <div class="project-description hide" data-project-description="1">
-              <video class="project-video" width="80%" loop controls>
-                <source src="assets/videos/interviewy.mov" type="video/mp4" />
-              </video>
+          </div>
+          <div class="project-tag-list">
+            <h3 class="project-subtitle">Awards:</h4>
+            <div>
+              <span class="project-tag-item project-tag-item--gold">Best Use of Assembly AI</span>
+            </div>
+          </div>
+          <div class="project-tag-list">
+            <h3 class="project-subtitle">Tools:</h4>
+            <div>
+              <span class="project-tag-item">React</span>
+              <span class="project-tag-item">Express</span>
+              <span class="project-tag-item">MongoDB</span>
+            </div>
+          </div>
+          <h3 class="project-summary">
+            Interviewy provides jobseekers an AI-driven accessible environment
+            where they can practice their interview skills at any time.
+          </h3>
+          <div class="project-content">
+            <div class="project-description">
               <p>
-                Developed with a team of three in <b>36 hours</b> for
-                <b>DeltaHacks 2022</b>. Won the
-                <b>Best Use of Assembly AI</b> category.
-              </p>
-              <p>
-                Interviewy is an <b>Artificial Intelligence</b> based interface
+                Developed with a team of three in <b>36 hours</b> for 
+                <b>DeltaHacks 2022</b>, Interviewy is an <b>Artificial Intelligence</b> based interface
                 that allows users to practice their interview skills by
                 providing them an analysis of their video recorded interview
                 based on their selected interview question. Users can reflect on
                 their confidence levels and covered topics by selecting a
-                specific time-stamp in their report.
-              </p>
-              <p>
-                An abundance of qualified applicants lose their chance to secure
+                specific time-stamp in their report. An abundance of qualified applicants lose their chance to secure
                 their dream job simply because they are unable to effectively
                 present their knowledge and skills when it comes to the
                 interview. The transformation of interviews into the virtual
                 format due to the Covid-19 pandemic has created many challenges
                 for the applicants, especially students as they have reduced
                 access to in-person resources where they could develop their
-                interview skills.
-              </p>
-              <p>
-                This Interface was built using the <b>MERN stack</b>. In the
+                interview skills. This Interface was built using the <b>MERN stack</b>. In the
                 backend we used the AssemblyAI APIs for monitoring the
                 confidence levels and covered topics.
               </p>
             </div>
-            <button
-              class="show-project-description-btn"
-              type="button"
-              data-project-show="1"
-            >
-              Show More
-            </button>
+            <video class="project-video" width="100%" loop controls>
+              <source src="assets/videos/interviewy.mov" type="video/mp4" />
+            </video>
           </div>
-        </div>
+        </article>
         <!-- STDetector -->
-        <div class="project" data-project>
-          <h2 class="project-title">STDetector</h2>
-          <h3 class="project-summary">
-            STDetector is a social media esque platform that decreases the
-            stigma of sharing STI test results with sexual partners.
-          </h3>
-          <div class="project-content">
-            <div class="project-tool-list">
-              <h4 class="project-subtitle">Tools:</h4>
-              <div>
-                <span class="project-tool-item">React-Native</span>
-                <span class="project-tool-item">Javascript</span>
-                <span class="project-tool-item">Airtable</span>
-              </div>
-            </div>
+        <article class="project" data-project>
+          <div class="project-header">
+            <h2 class="project-title"><i class="fa fa-trophy"></i>STDetector</h2>
             <div class="project-link-list">
               <a
                 href="https://github.com/faizahsayyid/qwerhacks2022"
@@ -169,99 +156,94 @@
                 >Devpost</a
               >
             </div>
-            <div class="project-description hide" data-project-description="2">
-              <video class="project-video" width="80%" loop controls>
-                <source src="assets/videos/stdetector.mp4" type="video/mp4" />
-              </video>
+          </div>
+          <div class="project-tag-list">
+            <h3 class="project-subtitle">Awards:</h4>
+            <div>
+              <span class="project-tag-item project-tag-item--gold">Most Innovative Hack</span>
+              <span class="project-tag-item project-tag-item--gold">Best Health and Wellness Hack</span>
+            </div>
+          </div>
+          <div class="project-tag-list">
+            <h4 class="project-subtitle">Tools:</h4>
+            <div>
+              <span class="project-tag-item">React-Native</span>
+              <span class="project-tag-item">Javascript</span>
+              <span class="project-tag-item">Airtable</span>
+            </div>
+          </div>
+          <h3 class="project-summary">
+            STDetector is a social media platform that decreases the
+            stigma of sharing STI test results with sexual partners.
+          </h3>
+          <div class="project-content">
+            <div class="project-description">
               <p>
-                Developed with a team of three in <b>36 hours</b> for
-                <b>QWER Hacks 2022</b>. Won the
-                <b>Best Health and Wellness Hack</b> and
-                <b>Most Innovative Hack</b> categories.
-              </p>
-              <p>
-                STDetector is <b>mobile app</b> that facilitates the sharing of
-                sexual health information among people. Upon signing up, you can
-                enter your sexual health information and upload pictures of your
-                lab tests as proof. Once that’s locked in, you can search for
-                your partner’s username and start a connection request. Upon
-                accepting your request, you and your partner will exchange
-                sexual health information at a glance.
-              </p>
-              <p>
-                Sexually transmitted infections are very common and costly to a
-                nation’s health and economy. 1 in 5 people in the US have an STI
-                and almost half of new STIs were among youth aged 18-24.
-                Additionally, most STIs have no signs of symptoms. The only way
-                to know is to get tested. Not to mention, once you know your
-                status, you might want to share that information with
-                prospective partners.
+                <p>
+                  Developed with a team of three in <b>36 hours</b>, 
+                  STDetector is <b>mobile app</b> that facilitates the sharing of
+                  sexual health information among people. Upon signing up, you can
+                  enter your sexual health information and upload pictures of your
+                  lab tests as proof. Once that’s locked in, you can search for
+                  your partner’s username and start a connection request. Upon
+                  accepting your request, you and your partner will exchange
+                  sexual health information at a glance. Sexually transmitted infections are very common and costly to a
+                  nation’s health and economy. 1 in 5 people in the US have an STI
+                  and almost half of new STIs were among youth aged 18-24.
+                  Additionally, most STIs have no signs of symptoms. The only way
+                  to know is to get tested. Not to mention, once you know your
+                  status, you might want to share that information with
+                  prospective partners.
+                </p>
               </p>
             </div>
-            <button
-              class="show-project-description-btn"
-              type="button"
-              data-project-show="2"
-              data-project-show-bool="false"
-            >
-              Show More
-            </button>
+            <video class="project-video" width="100%" loop controls>
+              <source src="assets/videos/stdetector.mp4" type="video/mp4" />
+            </video>
           </div>
-        </div>
+        </article>
         <!-- React Pokedex -->
-        <div class="project" data-project>
-          <h2 class="project-title">My Pokédex</h2>
+        <article class="project" data-project>
+          <div class="project-header">
+            <h2 class="project-title"><i class="fa fa-user"></i>My Pokédex</h2>
+            <div class="project-link-list">
+              <a
+                href="https://github.com/faizahsayyid/qwerhacks2022"
+                class="project-link-item project-github"
+                >GitHub Repo</a
+              >
+            </div>
+          </div>
+          <div class="project-tag-list">
+            <h4 class="project-subtitle">Tools:</h4>
+            <div>
+              <span class="project-tag-item">React</span>
+              <span class="project-tag-item">Javascript</span>
+              <span class="project-tag-item">HTML</span>
+              <span class="project-tag-item">CSS</span>
+            </div>
+          </div>
           <h3 class="project-summary">
             A Pokédex web application built with React and the Pokemon API
           </h3>
           <div class="project-content">
-            <div class="project-tool-list">
-              <h4 class="project-subtitle">Tools:</h4>
-              <div>
-                <span class="project-tool-item">React</span>
-                <span class="project-tool-item">Javascript</span>
-                <span class="project-tool-item">HTML</span>
-                <span class="project-tool-item">CSS</span>
-              </div>
-            </div>
-            <div class="project-link-list">
-              <a
-                href="https://github.com/faizahsayyid/react-pokedex"
-                class="project-link-item project-github"
-                >GitHub Repo</a
-              >
-              <!-- <span></span>
-              <a href="/" class="project-link-item">Deployed Site</a> -->
-            </div>
-            <div class="project-description hide" data-project-description="3">
-              <video class="project-video" width="80%" loop controls>
-                <source src="assets/videos/pokedex.mov" type="video/mp4" />
-              </video>
+            <div class="project-description">
               <p>
-                Some features of this website include, infinite scrolling, dark
-                and light theme, music, and individual pages for each pokemon.
+                <p>
+                  Some features of this website include, infinite scrolling, dark
+                  and light theme, music, and individual pages for each pokemon.
+                </p>
               </p>
             </div>
-            <button
-              class="show-project-description-btn"
-              type="button"
-              data-project-show="3"
-            >
-              Show More
-            </button>
+            <video class="project-video" width="100%" loop controls>
+              <source src="assets/videos/pokedex.mov" type="video/mp4" />
+            </video>
           </div>
-        </div>
+        </article>
       </div>
     </main>
     <footer>
       <h1 class="dark-text initials">FS.</h1>
-      <div class="nav-list">
-        <a href="/website" class="footer-item dark-text">Home</a>
-        <a href="/website/projects" class="footer-item dark-text">Projects</a>
-        <a href="/website/art" class="footer-item dark-text">Art</a>
-        <!-- <a href="/about" class="footer-item dark-text">About</a> -->
-        <a href="#" class="footer-item dark-text">Resume</a>
-      </div>
       <div class="socials">
         <a
           href="https://www.linkedin.com/in/faizah-sayyid-4653841b6/"
@@ -271,17 +253,22 @@
           href="https://github.com/faizahsayyid"
           class="dark-text fa fa-github fa-2x"
         ></a>
-        <a
-          href="https://www.instagram.com/fy_fy_comics/"
-          class="dark-text fa fa-instagram fa-2x"
-        ></a>
+        <a href="https://devpost.com/faizahsayyid" class="dark-text"
+          ><svg
+            fill="#fff"
+            width="32px"
+            height="32px"
+            viewBox="0 0 24 24"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.002 1.61 0 12.004 6.002 22.39h11.996L24 12.004 17.998 1.61zm1.593 4.084h3.947c3.605 0 6.276 1.695 6.276 6.31 0 4.436-3.21 6.302-6.456 6.302H7.595zm2.517 2.449v7.714h1.241c2.646 0 3.862-1.55 3.862-3.861.009-2.569-1.096-3.853-3.767-3.853z"
+            />
+          </svg>
+        </a>
       </div>
     </footer>
-    <!-- <script
-        src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous">
-    </script> -->
     <script type="module" src="./script.js"></script>
   </body>
 </html>

@@ -55,9 +55,14 @@ header > nav > .nav-list {
 header > nav > .socials {
   padding: 0 70px 0 0;
   justify-self: end;
+  display: flex;
+  justify-content: space-between;
 }
 
 header > nav > .socials > a {
+  display: block;
+  height: fit-content;
+  width: fit-content;
   text-decoration: none;
   margin: 0 var(--px-1);
 }
@@ -96,7 +101,7 @@ main {
   font-size: 3rem;
   letter-spacing: 10px;
   font-weight: 700;
-  color: var(--colour-3);
+  color: var(--light-text-colour);
   margin: 40px 0;
 }
 
@@ -129,7 +134,15 @@ footer > .nav-list > a {
   margin: 0 var(--px-2);
 }
 
+footer > .socials {
+  display: flex;
+  justify-content: space-between;
+}
+
 footer > .socials > a {
+  display: block;
+  height: fit-content;
+  width: fit-content;
   text-decoration: none;
   margin: 0 var(--px-2);
 }

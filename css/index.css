@@ -1,53 +1,60 @@
 /* Intro */
 
 .intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--colour-4);
-    height: calc(100vh - var(--header-height));
-    font-family: var(--title-font);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--colour-4);
+  height: calc(100vh - var(--header-height));
+  font-family: var(--title-font);
 }
 
 .intro-title {
-    overflow: hidden;
-    border-right: 3px solid var(--light-text-colour);
-    white-space: nowrap;
-    margin: 0 auto;
-    font-size: 10vw;
-    animation: 
-    typing 3s steps(12, end),
-    blink-caret .75s step-end infinite;
+  overflow: hidden;
+  border-right: 3px solid var(--light-text-colour);
+  white-space: nowrap;
+  margin: 0 auto;
+  font-size: 10vw;
+  animation: typing 3s steps(12, end), blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
-    from { width: 0 }
-    to { width: 70% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
 }
-  
+
 @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: var(--light-text-colour); }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--light-text-colour);
+  }
 }
 
 .intro-description {
-    margin: var(--px-3) 0;
-    font-size: var(--intro-description-font-size);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: var(--px-3) 0;
+  font-size: var(--intro-description-font-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro-tag {
-    margin: 0 var(--px-1);
-    font-size: 2vw;
+  margin: 0 var(--px-1);
+  font-size: 3vw;
 }
 
 .intro-dot {
-    display: inline-block;
-    height: 5px;
-    width: 5px;
-    border-radius: 50%;
-    background-color: var(--dark-bg-colour);
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: var(--dark-bg-colour);
 }
