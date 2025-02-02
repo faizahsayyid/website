@@ -4,7 +4,7 @@
   justify-content: center;
   gap: var(--px-4);
   padding: 0 calc(var(--px-4) * 3);
-  margin: auto;
+  margin: 0 auto var(--px-4);
 
   @media screen and (max-width: 1000px) {
     flex-direction: column;
