@@ -58,3 +58,7 @@
   border-radius: 50%;
   background-color: var(--dark-bg-colour);
 }
+
+.anchor-point {
+  scroll-margin-top: 75px;
+}
