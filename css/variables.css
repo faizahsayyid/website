@@ -50,7 +50,7 @@
   --footer-height: 300px;
 
   @media screen and (max-width: 450px) {
-    font-size: 10px;
+    font-size: 12px;
     --px-1: 5px;
     --px-2: 10px;
     --px-3: 20px;
