@@ -150,10 +150,17 @@
   display: inline;
 }
 
-.project-video {
+.project-visual {
+  width: 100%;
   display: block;
   margin: var(--px-1) auto var(--px-4);
   border-radius: 15px;
+  text-align: center;
+}
+
+.project-visual-item {
+  display: inline;
+  width: calc(50% - 2px);
 }
 
 .fa-trophy {
