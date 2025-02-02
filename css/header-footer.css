@@ -120,7 +120,16 @@ footer {
 footer > .initials {
   font-family: var(--logo-font);
   font-size: var(--initials-font-size);
+  margin-bottom: var(--px-2);
+}
+
+footer > .contact {
+  margin: 0;
+  font-size: var(--footer-font-size);
   margin-bottom: var(--px-3);
+}
+footer > .contact > a {
+  color: var(--colour-4);
 }
 
 footer > .nav-list {
