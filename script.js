@@ -8,7 +8,7 @@ hamburgerMenu.addEventListener("click", () => {
     socials.style.display = "none";
     navList.style.display = "none";
   } else {
-    socials.style.display = "block";
+    socials.style.display = "flex";
     navList.style.display = "block";
   }
   menuShow = !menuShow;
