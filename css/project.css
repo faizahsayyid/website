@@ -161,6 +161,9 @@
 .project-visual-item {
   display: inline;
   width: calc(50% - 2px);
+  @media screen and (max-width: 1050px) {
+    width: 100%;
+  }
 }
 
 .project-visual-item--bordered {
