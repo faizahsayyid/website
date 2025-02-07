@@ -7,11 +7,11 @@
   align-items: center;
   width: 100%;
   padding-bottom: var(--px-2);
-  background-color: var(--colour-5);
+  /* background-color: var(--colour-7); */
 }
 
 .project-list--personal {
-  background-color: var(--colour-7);
+  /* background-color: var(--colour-5); */
 }
 
 .project {
