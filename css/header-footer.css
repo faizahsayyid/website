@@ -102,7 +102,7 @@ main {
   letter-spacing: 10px;
   font-weight: 700;
   color: var(--light-text-colour);
-  margin: 40px 0;
+  padding: 40px 0;
   text-align: center;
 }
 

@@ -62,3 +62,14 @@
 .anchor-point {
   scroll-margin-top: 75px;
 }
+
+section {
+  padding: 0 4rem;
+
+  @media screen and (max-width: 1050px) {
+    padding: 0 2rem;
+  }
+  @media screen and (max-width: 750px) {
+    padding: 0;
+  }
+}

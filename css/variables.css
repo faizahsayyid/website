@@ -6,9 +6,11 @@
   --colour-2: hsl(259, 26%, 36%);
   --colour-3: hsl(237, 34%, 41%);
   --colour-4: #91a9d9;
-  --colour-5: hsl(5, 74%, 80%);
+  --colour-5: hsl(5, 74%, 90%);
+  --colour-6: hsl(5, 74%, 80%);
+  --colour-7: hsl(48, 77%, 90%);
 
-  --gold-banner-colour: #f5cd2f;
+  --gold-banner-colour: hsl(48, 91%, 57%);
   --light-border-colour: hsl(217, 32%, 92%);
 
   --light-text-colour: #262626;

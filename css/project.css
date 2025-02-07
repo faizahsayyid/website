@@ -6,11 +6,16 @@
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  margin-bottom: var(--px-2);
+  padding-bottom: var(--px-2);
+  background-color: var(--colour-5);
+}
+
+.project-list--personal {
+  background-color: var(--colour-7);
 }
 
 .project {
-  width: 90vw;
+  width: 90%;
   /* height: 50vh; */
   background-color: white;
   /* border: 1px solid var(--border-colour); */
@@ -57,6 +62,7 @@
   font-size: 1.25rem;
   margin: 0 5px 0 0;
   letter-spacing: 3px;
+  line-height: 2rem;
 }
 
 .project-summary {
@@ -74,19 +80,25 @@
 .project-tag-list {
   align-self: flex-start;
   margin: var(--px-3) var(--px-4) var(--px-1);
-  line-height: 2.5rem;
+  line-height: 1.5rem;
   display: flex;
 }
 
+.project-tag-list > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
 .project-tag-item {
-  margin: 0 5px 0 0;
+  display: inline;
   padding: calc(var(--px-1) / 2) var(--px-1);
   background-color: var(--colour-1);
   color: var(--dark-text-colour);
   border-radius: 15px;
   font-weight: 500;
-  font-size: min(1rem, 2vw);
-  white-space: nowrap;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .project-tag-item--gold {

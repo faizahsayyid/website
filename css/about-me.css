@@ -1,12 +1,17 @@
+.about-me-container {
+  background-color: var(--light-bg-colour);
+  padding-bottom: var(--px-6);
+}
+
 .about-me-container > div {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: var(--px-4);
-  padding: 0 calc(var(--px-4) * 3);
-  margin: 0 auto var(--px-4);
+  width: 90%;
+  margin: 0 auto;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1050px) {
     flex-direction: column;
   }
   @media screen and (max-width: 750px) {
@@ -17,8 +22,8 @@
 .about-me-image {
   width: 20%;
   border-radius: 10px;
-  @media screen and (max-width: 1000px) {
-    width: 50%;
+  @media screen and (max-width: 1050px) {
+    width: 35%;
   }
   @media screen and (max-width: 750px) {
     width: 75%;
